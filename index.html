@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Rating Component</title>
+    <meta name="author" content="Elmar Chavez" />
+    <meta
+      name="description"
+      content="A simple interactive rating component page built with HTML, CSS, and JavaScript. Created as part of Frontend Mentor challenge during the author's fifth month learning frontend web development."
+    />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/favicon-16x16.png"
+    />
+    <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png" />
+    <meta property="og:site_name" content="CodingWithJiro" />
+    <meta property="og:title" content="Interactive Rating Component" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="A simple interactive rating component page built with HTML, CSS, and JavaScript. Created as part of a Frontend Mentor challenge during the author's fifth month learning frontend web development."
+    />
+    <meta
+      property="og:url"
+      content="https://interactive-rating-component-fcc-jiro.netlify.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://interactive-rating-component-fcc-jiro.netlify.app/assets/img/site-preview-meta_1200x630.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Interactive Rating Component" />
+    <meta
+      name="twitter:description"
+      content="An interactive rating component built with #HTML, #CSS, & #JavaScript. #FrontendMentor challenge completed during month 5 of learning #WebDev."
+    />
+    <meta
+      name="twitter:image"
+      content="https://interactive-rating-component-fcc-jiro.netlify.app/assets/img/site-preview-meta_1200x630.png"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#121417"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://interactive-rating-component-fcc-jiro.netlify.app/"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a
+        class="header__skip sr-only"
+        href="#main"
+        aria-label="Skip to main content"
+      >
+        Go directly to the main content of the page.
+      </a>
+
+      <div class="theme">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="theme__icon theme__icon--light"
+          aria-hidden="true"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <g clip-path="url(#a)" fill="currentColor">
+              <path
+                d="M12 0a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1ZM4.929 3.515a1 1 0 0 0-1.414 1.414l2.828 2.828a1 1 0 0 0 1.414-1.414L4.93 3.515ZM1 11a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H1ZM18 12a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1ZM17.657 16.243a1 1 0 0 0-1.414 1.414l2.828 2.828a1 1 0 1 0 1.414-1.414l-2.828-2.828ZM7.757 17.657a1 1 0 1 0-1.414-1.414L3.515 19.07a1 1 0 1 0 1.414 1.414l2.828-2.828ZM20.485 4.929a1 1 0 0 0-1.414-1.414l-2.828 2.828a1 1 0 1 0 1.414 1.414l2.828-2.828ZM13 19a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0v-4ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#ffffff" d="M0 0h24v24H0z"></path>
+              </clipPath>
+            </defs>
+          </g>
+        </svg>
+
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="theme__icon theme__icon--dark hidden"
+          aria-hidden="true"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M9.272 2.406a1 1 0 0 0-1.23-1.355C6.59 1.535 5.432 2.487 4.37 3.55a11.399 11.399 0 0 0 0 16.182c4.518 4.519 11.51 4.261 15.976-.205 1.062-1.062 2.014-2.22 2.498-3.673A1 1 0 0 0 21.55 14.6c-3.59 1.322-7.675.734-10.434-2.025-2.765-2.766-3.328-6.83-1.844-10.168Z"
+              fill="currentColor"
+            ></path>
+          </g>
+        </svg>
+
+        <button
+          type="button"
+          aria-label="Toggle Light/Dark Mode"
+          aria-pressed="false"
+          class="theme__button"
+        ></button>
+      </div>
+    </header>
+
+    <main class="main" id="main">
+      <div class="main__container">
+        <section class="main__card">
+          <section class="rating">
+            <div class="rating__star">
+              <svg
+                width="17"
+                height="16"
+                xmlns="http://www.w3.org/2000/svg"
+                class="rating__star-icon"
+                aria-hidden="true"
+              >
+                <path
+                  d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+
+            <div class="rating__content">
+              <h1 class="rating__title">How did we do?</h1>
+
+              <p class="rating__description">
+                Please let us know how we did with your support request. All
+                feedback is appreciated to help us improve our offering!
+              </p>
+            </div>
+
+            <ul
+              class="rating__numbers"
+              role="radiogroup"
+              aria-label="Please rate your experience from 1 to 5"
+            >
+              <li
+                class="rating__list"
+                tabindex="-1"
+                role="radio"
+                aria-checked="false"
+                aria-label="1 star experience"
+              >
+                <span class="rating__number"> 1 </span>
+              </li>
+
+              <li
+                class="rating__list"
+                tabindex="-1"
+                role="radio"
+                aria-checked="false"
+                aria-label="2 star experience"
+              >
+                <span class="rating__number"> 2 </span>
+              </li>
+
+              <li
+                class="rating__list"
+                tabindex="0"
+                role="radio"
+                aria-checked="false"
+                aria-label="3 star experience"
+              >
+                <span class="rating__number"> 3 </span>
+              </li>
+
+              <li
+                class="rating__list"
+                tabindex="-1"
+                role="radio"
+                aria-checked="false"
+                aria-label="4 star experience"
+              >
+                <span class="rating__number"> 4 </span>
+              </li>
+
+              <li
+                class="rating__list"
+                tabindex="-1"
+                role="radio"
+                aria-checked="false"
+                aria-label="5 star experience"
+              >
+                <span class="rating__number"> 5 </span>
+              </li>
+            </ul>
+
+            <button class="rating__submit" type="button">Submit</button>
+          </section>
+
+          <section class="thanks">
+            <img
+              src="./assets/img/illustration-thank-you_162x108.svg"
+              alt=""
+              aria-hidden="true"
+              width="168"
+              height="108"
+              class="thanks__illustration"
+            />
+
+            <p class="thanks__confirmation">You selected 4 out of 5</p>
+
+            <div class="thanks__content">
+              <h2 class="thanks__title">Thank you!</h2>
+
+              <p class="thanks__message">
+                We appreciate you taking the time to give a rating. If you ever
+                need more support, don't hesitate to get in touch!
+              </p>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
