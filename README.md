@@ -56,6 +56,7 @@ The component features custom focus states for keyboard navigation, hover intera
 - Dynamic Confirmation Message on submission
 - Reduced Motion Support based on `prefers-reduced-motion`
 - [PerfectPixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonecod/dkaagdgjmgdmbnecmcefdhjekcoceebi) alignment with design mockups
+- Beautiful and realistic shadows achieved using [CSS Shadow Palette Generator](https://www.joshwcomeau.com/shadow-palette/)
 
 ---
 
