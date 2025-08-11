@@ -18,6 +18,7 @@
 ![Dynamic Content](https://img.shields.io/badge/Dynamic%20Content-Available-673ab7?style=for-the-badge)
 [![Google Lighthouse](https://img.shields.io/badge/Lighthouse-Audit-00B0FF?style=for-the-badge&logo=lighthouse&logoColor=white)](./assets/downloads/lighthouse-performance-report.pdf)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8b09d18e-e389-493b-81b0-24db68c68d35/deploy-status)](https://interactive-rating-component-fcc-jiro.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%205-blue)
 ![Views](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.frontend-mentor-interactive-rating-component&left_text=repo%20views)
@@ -26,8 +27,8 @@
 
 | _Mobile Preview (375x812)_                                   | _Desktop Preview (1440x960)_                                    |
 | ------------------------------------------------------------ | --------------------------------------------------------------- |
-| ![Mobile](./assets/img/site-preview-mobile_375x812.png)      | ![Desktop](./assets/img/site-preview-desktop_1440x960.png)      |
 | ![Mobile](./assets/img/site-preview-mobile-dark_375x812.png) | ![Desktop](./assets/img/site-preview-desktop-dark_1440x960.png) |
+| ![Mobile](./assets/img/site-preview-mobile_375x812.png)      | ![Desktop](./assets/img/site-preview-desktop_1440x960.png)      |
 
 A responsive, accessible, and theme-toggle-enabled rating component where users can select a score from 1–5 and submit their feedback.
 
@@ -97,7 +98,7 @@ The component features custom focus states for keyboard navigation, hover intera
 
 ## 🌐 Live Demo
 
-Or you can check out the 👉 [live website here](LINK)
+Or you can check out the 👉 [live website here](https://interactive-rating-component-fcc-jiro.netlify.app/)
 
 ---
 
@@ -114,10 +115,3 @@ Created by **Elmar Chavez**
 🗓️ Month/Year: **August 2025**
 
 📚 Journey: **5<sup>th</sup>** month of learning _frontend web development_.
-
-<!--
-
-FRONTEND MENTOR TAGS:
-html css javascript vscode git github netlify 5th-month frontend-mentor project perfectpixel lighthouse theme-toggle
-
--->
